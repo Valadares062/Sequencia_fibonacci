@@ -1,0 +1,23 @@
+print('SEQUENCIA DE FIBONACCI!')
+print('~~' * 20)
+#entrada de dados
+n = int(input('quantos números da seq. de fibonacci vc deseja ver? '))
+#variaveis de controle
+contador = 3
+base = 0
+soma = 1
+#criar condição pra caso pontual
+if n == 1:
+    print(base)
+else:
+#escrever algoritmos iniciais por padrão - 0, 1 - depois se iniciam as somas
+    print(f'{base} - {soma} - ', end=' ')
+#estrutura de looping com transformação de variáveis
+    while contador <= n:
+        continuacao = base + soma
+        print(f'{continuacao} - ', end=' ')
+        base = soma
+        soma = continuacao
+        contador += 1
+print('fim')
+
